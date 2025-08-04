@@ -22,7 +22,6 @@ export default function App() {
   // Current page number state (1-based)
   const [currentPage, setCurrentPage] = useState(1);
 
-  // Update preview when pages or title change
   useEffect(() => {
     const combinedHTML = pageRefs.current
       .map((ref, i) => {
