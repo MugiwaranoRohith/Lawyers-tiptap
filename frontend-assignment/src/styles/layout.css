@@ -1,0 +1,202 @@
+/* === Global === */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+  background: #f4f8f6;
+  color: #333;
+}
+
+/* === App Layout === */
+.app-container {
+  display: flex;
+  height: 100vh;
+}
+
+/* === Sidebar Left === */
+.sidebar-left {
+  width: 240px;
+  background: linear-gradient(180deg, #1e293b, #0f172a);
+  color: #f8fafc;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  box-shadow: 2px 0 8px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
+}
+.sidebar-left .app-logo {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.sidebar-left h2 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-bottom: 30px;
+  color: #f1f5f9;
+}
+.sidebar-left nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+.sidebar-left nav ul li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 16px;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: background 0.2s ease, transform 0.1s ease;
+  font-size: 0.95rem;
+}
+.sidebar-left nav ul li:hover {
+  background: rgba(255, 255, 255, 0.1);
+  transform: translateX(5px);
+}
+.sidebar-left nav ul li.active {
+  background: rgba(255, 255, 255, 0.2);
+  font-weight: 600;
+}
+
+/* === Sidebar Right === */
+.sidebar-right {
+  width: 260px;
+  background: #ffffff;
+  padding: 20px;
+  border-left: 1px solid #e5e7eb;
+  box-shadow: -2px 0 6px rgba(0, 0, 0, 0.05);
+}
+.thumbnail-placeholder {
+  background: linear-gradient(135deg, #e5e7eb, #f3f4f6);
+  height: 120px;
+  margin: 15px 0;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #6b7280;
+  font-size: 0.85rem;
+}
+
+/* === Main Content Area === */
+.main-area {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+/* === Header === */
+.editor-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 20px;
+  background: linear-gradient(90deg, #2563eb, #1d4ed8);
+  color: rgb(255, 255, 255);
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  margin-bottom: 16px;
+}
+.logo-text {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+/* === Toolbar === */
+.toolbar {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 16px;
+  padding: 8px 12px;
+  background: #ffffff;
+  border-radius: 8px;
+  border: 1px solid #d1d5db;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+}
+.toolbar button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  border-radius: 6px;
+  background: #f9fafb;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+}
+.toolbar button:hover {
+  background: #f3f4f6;
+  transform: scale(1.1);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+.toolbar button svg {
+  stroke: #374151;
+}
+
+/* === Page (A4 Look) === */
+.page {
+ 
+  background: #ffffff;
+  padding: 40px 50px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  border-radius: 8px;
+  page-break-after: always;
+}
+
+/* === Header & Footer === */
+/* .header {
+  border-bottom: 2px solid #e5e7eb;
+  padding-bottom: 12px;
+  margin-bottom: 16px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 600;
+  color: #1f2937;
+} */
+/* .footer {
+  border-top: 2px solid #e5e7eb;
+  padding-top: 10px;
+  margin-top: auto;
+  text-align: center;
+  font-size: 13px;
+  color: #4b5563;
+} */
+
+/* === Editor Text Area === */
+.editor {
+  flex: 1;
+  font-family: "Times New Roman", serif;
+  font-size: 16px;
+  line-height: 1.6;
+  outline: none;
+}
+
+/* === Page Break === */
+.page-break {
+  border-top: 2px dashed #9ca3af;
+  margin: 30px 0;
+  text-align: center;
+  color: #6b7280;
+  font-size: 12px;
+  position: relative;
+}
+.page-break span {
+  position: relative;
+  top: -0.8em;
+  background: #ffffff;
+  padding: 0 8px;
+}
+
+/* === Hidden Editor === */
+.hidden-editor {
+  display: none;
+}
