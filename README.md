@@ -1,4 +1,3 @@
-Sure! Here's a concise README template you can use for your Lawyers-tiptap project, covering constraints, trade-offs, and productionizing notes:
 
 ---
 
@@ -27,7 +26,7 @@ A rich text editor application tailored for legal documents with features such a
 
 ---
 
-## How to Productionise
+## Productionise
 
 * **Backend Integration**: Add a backend API for saving, versioning, and user authentication.
 * **Collaboration Features**: Integrate real-time collaboration with WebSockets or services like Firebase.
